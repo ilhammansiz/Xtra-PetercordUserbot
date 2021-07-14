@@ -4,7 +4,7 @@
 from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd
 from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text, edit_or_send_as_file, get_user, get_text
 import os
-from main_startup.core.startup_helpers import run_cmd
+from Petercord_Userbot.core.startup_helpers import run_cmd
 
 
 @ilhammansiz_on_cmd(['maigret'],
