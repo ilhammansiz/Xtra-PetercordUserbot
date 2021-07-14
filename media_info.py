@@ -1,22 +1,19 @@
-"""
-(C) @DeletedUser420
-All rights Reserved.
-"""
 
-from main_startup.config_var import Config
-from main_startup.core.decorators import friday_on_cmd, listen
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
-from main_startup.helper_func.logger_s import LogIt
+
+from Petercord_Userbot.config_var import Config
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd, listen
+from Petercord_Userbot.core.startup_helpers import run_cmd
+from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text
+from Petercord_Userbot.helper_func.logger_s import LogIt
 import os
 from telegraph import Telegraph
 
 telegraph = Telegraph()
-page_ = telegraph.create_account(short_name="Friday 🇮🇳")
+page_ = telegraph.create_account(short_name="Petercord Userbot 🏅")
 
 
 
-@friday_on_cmd(['mediainfo', 'mediadata'],
+@ilhammansiz_on_cmd(['mediainfo', 'mediadata'],
                cmd_help={
                "help": "Get Full Info Of A Media.",
                "example": "{ch}mediainfo (replying to file)"
