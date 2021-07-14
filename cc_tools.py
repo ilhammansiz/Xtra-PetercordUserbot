@@ -1,31 +1,25 @@
-# Copyright (C) 2020-2021 by DevsExpo@Github, < https://github.com/DevsExpo >.
-#
-# This file is part of < https://github.com/DevsExpo/FridayUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/DevsExpo/blob/master/LICENSE >
-#
-# All rights reserved.
+# 
 
 import aiohttp
 import asyncio
 import re
 import random
-from main_startup.config_var import Config
+from Petercord_Userbot.config_var import Config
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options
-from main_startup.config_var import Config
-from main_startup.core.decorators import friday_on_cmd, listen
-from main_startup.helper_func.basic_helpers import (
+from Petercord_Userbot.config_var import Config
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd, listen
+from Petercord_Userbot.helper_func.basic_helpers import (
     edit_or_reply,
     edit_or_send_as_file,
     get_text,
     get_user,
     iter_chats,
 )
-from main_startup.helper_func.logger_s import LogIt
-from plugins import devs_id
+from Petercord_Userbot.helper_func.logger_s import LogIt
+from PetercordUserbot import devs_id
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.common.exceptions import TimeoutException
@@ -68,7 +62,7 @@ async def namso_gen(bin, no_of_result=15):
     driver.close()
     return s
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["namsogen"],
     cmd_help={
         "help": "Gen CC From Bin Using Namso-Gen",
@@ -98,7 +92,7 @@ async def ns_gen(client, message):
 `{s}`
 
 
-**Powered By FridayUb**
+**Powered By Petercord_UserbotUb**
 """
     await msg.edit(t, parse_mode="md")
 
@@ -168,11 +162,11 @@ async def cc_(cc):
 <b>Response :</b> <code>{check_response}</code>
 <b>Time Taken:</b> <code>{time_taken}</code>
 
-<b><u>Checked Using FridayUB</b></u>
+<b><u>Checked Using Petercord_UserbotUB</b></u>
 """
     return final_t
     
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["ccn"],
     cmd_help={
         "help": "Check CC - CCN Based.",
@@ -187,7 +181,7 @@ async def cc_check(client, message):
     r = await cc_(cc)
     await msg.edit(r)
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["sk"],
     cmd_help={
         "help": "Check Sk.",
