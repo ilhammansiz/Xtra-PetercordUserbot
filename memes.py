@@ -1,6 +1,6 @@
 import random
-from main_startup.core.decorators import friday_on_cmd, listen
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd, listen
+from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text
 import asyncio
 
 SLAP_TEMPLATES = [
@@ -112,7 +112,7 @@ def gen_random_slap(user1, user2):
     return wow
 
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["slap"],
     cmd_help={
         "help": "Slap Replied User",
@@ -131,7 +131,7 @@ async def slap_hard(client, message):
     slap_ = gen_random_slap(message.from_user.mention, message.reply_to_message.from_user.mention)
     await msg_.edit(slap_)
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["insult"],
     cmd_help={
         "help": "Insult A User",
@@ -143,7 +143,7 @@ async def insult_hard(client, message):
     await msg_.edit(insult_)
 
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["lmgtf"],
     cmd_help={
         "help": "Let me Google that for you.",
@@ -156,7 +156,7 @@ async def lmgtfm(client, message):
     await edit_or_reply(message, f"I have Google That For [You]({url}) .")
 
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["type"],
     cmd_help={
         "help": "Type Like You Are Typing IN A Key board",
