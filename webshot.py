@@ -1,16 +1,10 @@
-# Copyright (C) 2020-2021 by DevsExpo@Github, < https://github.com/DevsExpo >.
-#
-# This file is part of < https://github.com/DevsExpo/FridayUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/DevsExpo/blob/master/LICENSE >
-#
-# All rights reserved.
+# ilham
 
 from bs4 import BeautifulSoup
-from main_startup.config_var import Config
-from main_startup.core.decorators import friday_on_cmd
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text, humanbytes
+from Petercord_Userbot.config_var import Config
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd
+from Petercord_Userbot.core.startup_helpers import run_cmd
+from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text, humanbytes
 from hashlib import md5
 import aiofiles
 import os
@@ -50,7 +44,7 @@ async def download_img(url):
     return file_path
 
   
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["webshot", "ws"],
     cmd_help={
         "help": "Take A Screen Shot Of A Website.",
