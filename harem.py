@@ -1,25 +1,19 @@
-# Copyright (C) 2020-2021 by DevsExpo@Github, < https://github.com/DevsExpo >.
-#
-# This file is part of < https://github.com/DevsExpo/FridayUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/DevsExpo/blob/master/LICENSE >
-#
-# All rights reserved.
+# 
 
 import aiohttp
 from pyrogram import filters
-from xtraplugins.dB.harem_heckdb import add_chat, is_chat_in_db, rm_chat
-from main_startup.config_var import Config
-from main_startup.core.decorators import friday_on_cmd, listen
-from main_startup.helper_func.basic_helpers import (
+from xtraPetercordUserbot.dB.harem_heckdb import add_chat, is_chat_in_db, rm_chat
+from Petercord_Userbot.config_var import Config
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd, listen
+from Petercord_Userbot.helper_func.basic_helpers import (
     edit_or_reply,
     edit_or_send_as_file,
     get_text,
     get_user,
     iter_chats,
 )
-from main_startup.helper_func.logger_s import LogIt
-from plugins import devs_id
+from Petercord_Userbot.helper_func.logger_s import LogIt
+from PetercordUserbot import devs_id
 import io
 import os
 import asyncio
@@ -54,7 +48,7 @@ async def ParseSauce(googleurl):
         results["best_guess"] = best_guess.get_text()
     return results
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["ahc"],
     cmd_help={
         "help": "Add A Chat To Harem List.",
@@ -70,7 +64,7 @@ async def add_harem_hc(client, message):
     await pablo.edit("`Successfully Added Chat To Harem Watch.`")
 
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["rmhc"],
     group_only=True,
     cmd_help={"help": "Remove Chat From Harem List.", "example": "{ch}rmhc"},
