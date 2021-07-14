@@ -1,25 +1,19 @@
-# Copyright (C) 2020-2021 by DevsExpo@Github, < https://github.com/DevsExpo >.
-#
-# This file is part of < https://github.com/DevsExpo/FridayUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/DevsExpo/blob/master/LICENSE >
-#
-# All rights reserved.
+# 
 
-from main_startup.core.decorators import friday_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd
+from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text
 import flag
 import html
 from countryinfo import CountryInfo
 
 
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["country", "Countries"],
     is_official=False,
     cmd_help={
         "help": "Get Information About Any Country",
-        "example": "{ch}country India",
+        "example": "{ch}country Indonesia",
     },
 )
 async def country_(client, message):
@@ -106,6 +100,6 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 <u><b>
-Information Gathered By FridayUB.
+Information Gathered By Petercord_UserbotUB.
 """
     await msg_.edit(caption, parse_mode="html")
