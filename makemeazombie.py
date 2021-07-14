@@ -1,16 +1,10 @@
-# Copyright (C) 2020-2021 by DevsExpo@Github, < https://github.com/DevsExpo >.
-#
-# This file is part of < https://github.com/DevsExpo/FridayUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/DevsExpo/blob/master/LICENSE >
-#
-# All rights reserved.
+# .
 
-from main_startup.config_var import Config
-from main_startup.core.decorators import friday_on_cmd
-from main_startup.core.startup_helpers import run_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text
-from main_startup.helper_func.plugin_helpers import convert_to_image
+from Petercord_Userbot.config_var import Config
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd
+from Petercord_Userbot.core.startup_helpers import run_cmd
+from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text
+from Petercord_Userbot.helper_func.plugin_helpers import convert_to_image
 import requests
 import os
 from base64 import b64decode
@@ -25,13 +19,13 @@ async def make_me_a_zombie(img_path):
 
 def base64_to_image(base_code):
     """Decode And Convert To image Format."""
-    img_name = "zombie_by_FRIDAYUB.png"   
+    img_name = "zombie_by_PETERCORDUB.png"   
     with open(img_name,"wb") as f:
         f.write(b64decode(str(base_code))) 
         f.close()
     return img_name
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["zombie"],
     cmd_help={
         "help": "Make A Person Look Like A Zombie.",
