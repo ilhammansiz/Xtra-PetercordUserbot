@@ -1,8 +1,8 @@
 import os
-from main_startup.core.decorators import friday_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text, progress, humanbytes, runcmd
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd
+from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text, progress, humanbytes, runcmd
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["ttg"],
     cmd_help={
         "help": "Convert Tgs To Gif",
