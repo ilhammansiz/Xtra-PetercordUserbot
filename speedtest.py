@@ -1,9 +1,9 @@
 import speedtest
-from main_startup.core.decorators import friday_on_cmd
-from main_startup.helper_func.basic_helpers import edit_or_reply, get_text, edit_or_send_as_file, get_user
+from Petercord_Userbot.core.decorators import ilhammansiz_on_cmd
+from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text, edit_or_send_as_file, get_user
 
 
-@friday_on_cmd(['speedtest', 'st'],
+@ilhammansiz_on_cmd(['speedtest', 'st'],
                cmd_help={
                 'help': 'Test Your Server Speed.',
                 'example': '{ch}speedtest'})
