@@ -34,7 +34,7 @@ async def xvid(client, message):
 
 
 
-@friday_on_cmd(
+@ilhammansiz_on_cmd(
     ["xsearch"],
     cmd_help={
         "help": "Xvideo Searcher",
