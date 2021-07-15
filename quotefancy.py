@@ -5,7 +5,7 @@ from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply
 from quotefancy import get_quote
 
 
-@ilhammmansiz_on_cmd(
+@ilhammansiz_on_cmd(
     ['quotefancy'],
     is_official=False,
     cmd_help={
