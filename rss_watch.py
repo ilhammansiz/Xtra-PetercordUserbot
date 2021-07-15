@@ -4,7 +4,7 @@ from Petercord_Userbot.helper_func.basic_helpers import edit_or_reply, get_text
 import feedparser
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from Petercord_Userbot import Petercord_Userbot
-from xtraPetecordUserbot.dB.rss_db import (
+from xtraPetercordUserbot.dB.rss_db import (
     add_rss,
     is_get_chat_rss,
     del_rss,
