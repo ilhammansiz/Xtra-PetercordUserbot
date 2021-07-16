@@ -37,7 +37,7 @@ def _check_heroku(func):
             await func(client, message, heroku_client)
     return heroku_cli
     
-@ilhammanisiz_on_cmd(
+@ilhammansiz_on_cmd(
     ['usage'],
     cmd_help={
         "help": "Check Your App Usage!",
