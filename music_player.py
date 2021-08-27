@@ -113,7 +113,7 @@ async def ski_p(client, message):
 async def play_m(client, message):
     global s
     global s_dict
-    group_call.client = client
+    group_call.client = GPC.get((message.chat.id, client.me.id))
     u_s = await edit_or_reply(message, "`Processing..`")
     if message.reply_to_message:
          if message.reply_to_message.audio:
