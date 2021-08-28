@@ -50,7 +50,7 @@ async def xvidsearch(client, message):
             return
     try:
         qu = msg.replace(" ","+")
-        page= requests.get(f"http://178.128.114.78/?k={qu}").content
+        page= requests.get(f"https://www.xvideos.com/?k={qu}").content
         soup = bs4.BeautifulSoup(page, 'html.parser')
         col= soup.findAll("div",{"class":"thumb"})
 
@@ -62,7 +62,7 @@ async def xvidsearch(client, message):
 
             semd = link.split("/")[2]
 
-            links += f"<a href='http://178.128.114.78/{link}'>• {semd.upper()}</a>\n"
+            links += f"<a href='https://www.xvideos.com/{link}'>• {semd.upper()}</a>\n"
         await editer.edit(links,parse_mode="HTML")
 
 
