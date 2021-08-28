@@ -50,7 +50,7 @@ async def xvidsearch(client, message):
             return
     try:
         qu = msg.replace(" ","+")
-        page= requests.get(f"http://178.128.114.78/search/?k={qu}").content
+        page= requests.get(f"http://178.128.114.78/search/{qu}").content
         soup = bs4.BeautifulSoup(page, 'html.parser')
         col= soup.findAll("div",{"class":"thumb"})
 
